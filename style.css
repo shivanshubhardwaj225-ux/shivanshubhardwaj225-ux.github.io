@@ -1,0 +1,376 @@
+/* Global reset & base typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #f5f8f7;
+  color: #1f2a2e;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header & navigation */
+.navbar {
+  background-color: #14505c;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  border-bottom-color: #e3a62b;
+}
+
+/* Hero banner */
+.hero {
+  background-color: #14505c;
+  color: #ffffff;
+  text-align: center;
+  padding: 90px 20px 100px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  max-width: 700px;
+  margin: 0 auto 16px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 560px;
+  margin: 0 auto 28px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #e3a62b;
+  color: #1f2a2e;
+  border: none;
+  padding: 12px 26px;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #c98f1c;
+}
+
+/* Layout containers */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.narrow {
+  max-width: 600px;
+}
+
+.container h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #14505c;
+}
+
+.light-box {
+  background-color: #e4eeec;
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.steps li {
+  margin-bottom: 10px;
+  padding-left: 18px;
+  border-left: 4px solid #e3a62b;
+}
+
+/* Featured cards on homepage */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #d3dedb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card-top {
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  padding: 12px 16px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* Category colors */
+.heritage  { background-color: #a4512f; }
+.hills     { background-color: #3d7a4f; }
+.religious { background-color: #8a6a14; }
+.beach     { background-color: #1f78a8; }
+
+.card-body {
+  padding: 16px;
+}
+
+.card-body h3 {
+  margin-bottom: 6px;
+}
+
+.card-body p {
+  font-size: 15px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e4eeec;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.cost {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #14505c;
+}
+
+/* Search & filter controls */
+.search {
+  width: 100%;
+  padding: 11px;
+  font-size: 16px;
+  font-family: inherit;
+  border: 1px solid #9fb3ae;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  font-family: inherit;
+  font-size: 15px;
+  background-color: #ffffff;
+  border: 1px solid #14505c;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: #e4eeec;
+}
+
+.filter-btn.selected {
+  background-color: #14505c;
+  color: #ffffff;
+}
+
+#countText {
+  margin-bottom: 14px;
+}
+
+/* Forms */
+.form-box {
+  background-color: #ffffff;
+  border: 1px solid #d3dedb;
+  border-radius: 6px;
+  padding: 24px;
+  margin-top: 18px;
+}
+
+.form-box label {
+  display: block;
+  margin: 14px 0 5px;
+  font-weight: bold;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  border: 1px solid #9fb3ae;
+  border-radius: 4px;
+}
+
+.form-box button {
+  margin-top: 22px;
+}
+
+.error {
+  display: block;
+  color: #b3261e;
+  font-size: 14px;
+  min-height: 18px;
+}
+
+.success {
+  margin-top: 16px;
+  color: #1c6b3a;
+  font-weight: bold;
+}
+
+/* Budget calculator output */
+.result-box {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e4eeec;
+  border-left: 5px solid #14505c;
+  border-radius: 4px;
+  display: none;
+}
+
+.result-box h3 {
+  margin-bottom: 8px;
+}
+
+.big-amount {
+  font-size: 30px;
+  font-weight: bold;
+  color: #14505c;
+}
+
+/* Polaroid cards on destinations page */
+.polaroid {
+  background-color: #ffffff;
+  padding: 12px 12px 18px;
+  border: 1px solid #d3dedb;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s ease;
+}
+
+.polaroid:nth-child(odd) {
+  transform: rotate(-2deg);
+}
+
+.polaroid:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.04);
+}
+
+.photo-wrap {
+  position: relative;
+}
+
+.photo-wrap img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 3px 12px;
+  border-radius: 12px;
+}
+
+.caption {
+  padding-top: 12px;
+  text-align: center;
+}
+
+.caption h3 {
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+  font-weight: normal;
+  color: #14505c;
+  line-height: 1.1;
+}
+
+.caption .city {
+  font-size: 14px;
+  color: #5b6b66;
+  margin: 2px 0 8px;
+}
+
+.caption .info {
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  background-color: #1f2a2e;
+  color: #cfd8d5;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}

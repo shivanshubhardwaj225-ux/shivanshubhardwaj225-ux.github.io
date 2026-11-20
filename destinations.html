@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Destinations | Yatra Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Yatra Guide</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html" class="active">Destinations</a></li>
+        <li><a href="budget.html">Budget Calculator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="page-intro">
+        <h2>Explore Destinations</h2>
+        <p class="subtitle">Filter spots by vibe, search by city, and browse cards for your next trip.</p>
+      </div>
+
+      <div class="controls-bar">
+        <label for="searchBox" class="sr-only">Search place or city</label>
+        <input
+          type="text"
+          id="searchBox"
+          class="search"
+          placeholder="Try Jaipur, Manali, or beach..."
+          autocomplete="off"
+        >
+
+        <div class="filters" role="group" aria-label="Filter destinations by category">
+          <button type="button" class="filter-btn selected" data-type="all">All Spots</button>
+          <button type="button" class="filter-btn" data-type="heritage">Heritage</button>
+          <button type="button" class="filter-btn" data-type="hills">Hills</button>
+          <button type="button" class="filter-btn" data-type="religious">Religious</button>
+          <button type="button" class="filter-btn" data-type="beach">Beach</button>
+        </div>
+      </div>
+
+      <p id="countText" class="count-text" aria-live="polite"></p>
+
+      <div class="card-grid" id="placeList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by Shivanshu Bhardwaj | LPU CA Project | HTML, CSS and JavaScript</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

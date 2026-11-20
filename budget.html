@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Calculator - Yatra Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Yatra Guide</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="budget.html" class="active">Budget Calculator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container narrow">
+      <h2>Trip Budget Calculator</h2>
+      <p>Pick a destination, set your trip length and group size, and get a rough estimate for stay, meals, and local travel.</p>
+
+      <form id="budgetForm" class="form-box">
+        <label for="placeSelect">Destination</label>
+        <select id="placeSelect"></select>
+
+        <label for="days">Number of days</label>
+        <input type="number" id="days" min="1" max="30" value="3">
+
+        <label for="people">Number of people</label>
+        <input type="number" id="people" min="1" max="20" value="2">
+
+        <label for="style">Travel style</label>
+        <select id="style">
+          <option value="1">Budget (hostels, buses &amp; autos)</option>
+          <option value="1.5" selected>Standard (3-star stay)</option>
+          <option value="2.5">Luxury (4/5-star hotel &amp; private cab)</option>
+        </select>
+
+        <button type="submit" class="btn">Calculate</button>
+      </form>
+
+      <div id="result" class="result-box"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Shivanshu Bhardwaj | LPU CA Project | HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Yatra Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Yatra Guide</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="budget.html">Budget Calculator</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container narrow">
+      <h2>Contact us</h2>
+      <p>Need help picking a route or destination? Leave a note below.</p>
+
+      <form id="contactForm" class="form-box">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="name@example.com">
+        <span class="error" id="emailError"></span>
+
+        <label for="phone">Phone number</label>
+        <input type="text" id="phone" placeholder="10-digit number">
+        <span class="error" id="phoneError"></span>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your question or trip plan"></textarea>
+        <span class="error" id="messageError"></span>
+
+        <button type="submit" class="btn">Send message</button>
+      </form>
+
+      <p id="successMsg" class="success"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Shivanshu Bhardwaj | LPU CA Project | HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
